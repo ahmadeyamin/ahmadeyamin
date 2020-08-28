@@ -1,6 +1,6 @@
 ### Hi there 👋, I'm Eyamin
 #### I'm full stack Web Developer
-![I'm full stack Web Developer](https://scontent.fdac31-1.fna.fbcdn.net/v/t1.0-9/67716871_708583912916053_1708297407755714560_o.jpg?_nc_cat=110&_nc_sid=e3f864&_nc_ohc=kzzJmIS86X4AX8NYhOI&_nc_ht=scontent.fdac31-1.fna&oh=e25a7b05fe54cf1b8582db080fcfee1a&oe=5F70448D)
+
 
 I make things with coding, here I'm because I love open source and love git & GitHub. 
 
@@ -10,7 +10,6 @@ Now I'm working on my own project <a href="ghorepai.com"> GhorePai.com</a>. This
 
 At last, I'm available for interviews, podcasts, calls, and general chatting.
 
-Bye
 
 
 Skills: 
