@@ -20,7 +20,7 @@ Skills:
 - 👯 I’m looking to collaborate on All open source. 
 - 🤔 I’m looking for help with You. 
 - 💬 Ask me about Web Tech. 
-- 📫 How to reach me: <a href="about.me/ahmadeyamin">All</a> 
+- 📫 How to reach me: <a href="//about.me/ahmadeyamin">All</a> 
 - ⚡ Fun fact: I enjoy coding. 
 
 
