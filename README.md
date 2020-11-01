@@ -47,7 +47,7 @@ Skills:
 </p>
 
 - 🔭 I’m currently working on Own Dream. 
-- 🌱 I’m currently learning Whatever. 
+- 🌱 I’m currently learning Flutter. 
 - 👯 I’m looking to collaborate on All open source. 
 - 🤔 I’m looking for help with You. 
 - 💬 Ask me about Web Tech. 
