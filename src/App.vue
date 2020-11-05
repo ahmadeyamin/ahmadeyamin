@@ -2,7 +2,7 @@
     <header data-collapse="medium" role="banner" class="navbar w-nav">
         <div class="container nav w-container">
             <router-link to="/" aria-current="page" class="logo w-nav-brand w--current">
-                <div class="logo-text">Eyamin {{size.width}}</div>
+                <div class="logo-text">Eyamin</div>
             </router-link>
             <transition name="slide">
                 <nav role="navigation" class="navmenu w-nav-menu" v-if="NavOpen">

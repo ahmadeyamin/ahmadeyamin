@@ -1,5 +1,4 @@
 <template>
-    <transition name="slide">
         <div class="blog-section-2">
             <div class="b-sec-2 container w-container">
                 <div class="b-sec-2_inner">
@@ -28,11 +27,11 @@
                         </ul>
                     </div>
                     <div class="b-sec-3_blogs">
-                        <div class="sec-3_blog">
+                        <div class="sec-3_blog" v-for="(post,index) in posts" :key="index">
                             <div class="sec-3_blog--inner">
                                 <a href="#" class="blog_f_image w-inline-block">
                                     <img
-                                        src="../assets/images/shanti-sparrow-website.jpeg"
+                                        :src="post.image"
                                         loading="lazy"
                                         alt
                                         class="blog_f_image_src"
@@ -40,133 +39,16 @@
                                 </a>
                                 <div class="blog_inf_sec">
                                     <p class="blog_cat_t">PHP</p>
-                                    <p class="blog_p_date">29, Dsc, 2020</p>
+                                    <p class="blog_p_date">{{new Date(Date(post.date.seconds)).toLocaleDateString()}}</p>
                                 </div>
                                 <a href="#" class="blog_title w-inline-block">
                                     <h1
                                         class="blog_title_text"
-                                    >Best way to copy in exams after lockdown</h1>
+                                    >{{post.title ?? 'N\\A'}}</h1>
                                 </a>
                                 <div class="blog_text">
                                     <p class="blog_text_p">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                                        ornare, eros dolor interdum nulla,
-                                    </p>
-                                </div>
-                                <a href="#" class="read_mored transition">Read Full Article</a>
-                            </div>
-                        </div>
-                        <div class="sec-3_blog">
-                            <div class="sec-3_blog--inner">
-                                <a href="#" class="blog_f_image w-inline-block">
-                                    <img
-                                        src="../assets/images/Juliette-van-Rhyn-website.jpeg"
-                                        loading="lazy"
-                                        alt
-                                        class="blog_f_image_src"
-                                    />
-                                </a>
-                                <div class="blog_inf_sec">
-                                    <p class="blog_cat_t">PHP</p>
-                                    <p class="blog_p_date">29, Dsc, 2020</p>
-                                </div>
-                                <a href="#" class="blog_title w-inline-block">
-                                    <h1
-                                        class="blog_title_text"
-                                    >Best way to copy in exams after lockdown</h1>
-                                </a>
-                                <div class="blog_text">
-                                    <p class="blog_text_p">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                                        ornare, eros dolor interdum nulla,
-                                    </p>
-                                </div>
-                                <a href="#" class="read_mored transition">Read Full Article</a>
-                            </div>
-                        </div>
-                        <div class="sec-3_blog">
-                            <div class="sec-3_blog--inner">
-                                <a href="#" class="blog_f_image w-inline-block">
-                                    <img
-                                        src="../assets/images/Juliette-van-Rhyn-website.jpeg"
-                                        loading="lazy"
-                                        alt
-                                        class="blog_f_image_src"
-                                    />
-                                </a>
-                                <div class="blog_inf_sec">
-                                    <p class="blog_cat_t">PHP</p>
-                                    <p class="blog_p_date">29, Dsc, 2020</p>
-                                </div>
-                                <a href="#" class="blog_title w-inline-block">
-                                    <h1
-                                        class="blog_title_text"
-                                    >Best way to copy in exams after lockdown</h1>
-                                </a>
-                                <div class="blog_text">
-                                    <p class="blog_text_p">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Suspendisse varius enim in eros elementum tristique.
-                                    </p>
-                                </div>
-                                <a href="#" class="read_mored transition">Read Full Article</a>
-                            </div>
-                        </div>
-                        <div class="sec-3_blog">
-                            <div class="sec-3_blog--inner">
-                                <a href="#" class="blog_f_image w-inline-block">
-                                    <img
-                                        src="../assets/images/Businessman-Transparent.png"
-                                        loading="lazy"
-                                        alt
-                                        class="blog_f_image_src"
-                                    />
-                                </a>
-                                <div class="blog_inf_sec">
-                                    <p class="blog_cat_t">PHP</p>
-                                    <p class="blog_p_date">29, Dsc, 2020</p>
-                                </div>
-                                <a href="#" class="blog_title w-inline-block">
-                                    <h1
-                                        class="blog_title_text"
-                                    >Best way to copy in exams after lockdown</h1>
-                                </a>
-                                <div class="blog_text">
-                                    <p class="blog_text_p">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Suspendisse varius enim in eros elementum tristique.
-                                    </p>
-                                </div>
-                                <a href="#" class="read_mored transition">Read Full Article</a>
-                            </div>
-                        </div>
-                        <div class="sec-3_blog">
-                            <div class="sec-3_blog--inner">
-                                <a href="#" class="blog_f_image w-inline-block">
-                                    <img
-                                        src="../assets/images/Maria-Vazquez-website.jpeg"
-                                        loading="lazy"
-                                        alt
-                                        class="blog_f_image_src"
-                                    />
-                                </a>
-                                <div class="blog_inf_sec">
-                                    <p class="blog_cat_t">PHP</p>
-                                    <p class="blog_p_date">29, Dsc, 2020</p>
-                                </div>
-                                <a href="#" class="blog_title w-inline-block">
-                                    <h1
-                                        class="blog_title_text"
-                                    >Best way to copy in exams after lockdown</h1>
-                                </a>
-                                <div class="blog_text">
-                                    <p class="blog_text_p">
-                                        consectetur adipiscing elit. Duis cursus, mi quis viverra
-                                        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean
-                                        faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                                        tristique posuere.
+                                        {{post.body.length > 240 ? post.body.substr(0,240)+'...' : post.body}}
                                     </p>
                                 </div>
                                 <a href="#" class="read_mored transition">Read Full Article</a>
@@ -176,12 +58,31 @@
                 </div>
             </div>
         </div>
-    </transition>
 </template>
 
 <script>
+import db from '../firebase'
 export default {
-    name: "Blog"
+    name: "Blog",
+
+        data() {
+        return {
+            posts:[],
+            loading: true
+        }
+    },
+
+    mounted() {
+
+        db.collection('posts').limit(3).onSnapshot(snapshot=>{
+            this.posts = []
+            snapshot.forEach(data=>{
+                this.posts.push(data.data())
+            })
+
+            this.loading = false
+        })
+    }
 };
 </script>
 

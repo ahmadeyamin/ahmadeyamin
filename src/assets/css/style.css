@@ -715,6 +715,7 @@ a {
   padding: 40px 30px 30px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0)), color-stop(24%, rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.52)));
   background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.26) 24%, rgba(0, 0, 0, 0.52));
+  pointer-events: none;
 }
 
 .see-more-btn {
@@ -728,6 +729,7 @@ a {
   font-size: 1.3rem;
   line-height: 1em;
   font-weight: 900;
+  pointer-events:all;
 }
 
 .portfolio-box-title {
@@ -1144,6 +1146,8 @@ a {
 
 .sec_7--item-img {
   border-radius: 4px;
+  min-height: 270px;
+  object-fit: cover;
 }
 
 .sec_7--item_cont {

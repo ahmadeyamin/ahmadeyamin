@@ -397,6 +397,12 @@
                                             id="subjet"
                                             required
                                         />
+                                        <select class="contact_box_input transition" style="padding:13px 7px;" placeholder="Select Project Range">
+                                            <option value="" selected >Select Project Range</option>
+                                            <option value="100-1000">100$ - 1000$</option>
+                                            <option value="1001-10000">1001$ - 10000$</option>
+                                            <option value="10001-100000">10001$ - 100000$</option>
+                                        </select>
                                         <textarea
                                             placeholder="Your Messages"
                                             maxlength="5000"
@@ -477,90 +483,18 @@
             </div>
         </div>
     </div>
-    <div class="section-7">
-        <div class="sec-7 container w-container">
-            <div class="sec-7_inner">
-                <h1 class="sec_6-title">
-                    Latest Blogs
-                    <br />
-                </h1>
-                <div class="sec_7-box">
-                    <div class="sec_7--item">
-                        <a href="#" class="sec_7--item_in w-inline-block">
-                            <img
-                                src="../assets/images/Juliette-van-Rhyn-website.jpeg"
-                                loading="lazy"
-                                alt
-                                class="sec_7--item-img"
-                            />
-                            <div class="sec_7--item_cont">
-                                <p class="sec_7--item_date">
-                                    <span class="author_box">By Ahmad Eyamin</span> • Nov 17 2020
-                                </p>
-                                <h1 class="sec_7-text">Let&#x27;s make website cool and smart</h1>
-                                <p class="sec_7-readmore">Read More ...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="sec_7--item">
-                        <a href="#" class="sec_7--item_in w-inline-block">
-                            <img
-                                src="../assets/images/kate-moross-website.jpeg"
-                                loading="lazy"
-                                alt
-                                class="sec_7--item-img"
-                            />
-                            <div class="sec_7--item_cont">
-                                <p class="sec_7--item_date">
-                                    <span class="author_box">By Ahmad Eyamin</span> • Nov 17 2020
-                                </p>
-                                <h1 class="sec_7-text">
-                                    value of the character Devanagari Sign High Spacing
-                                    <strong>
-                                        <em>Dot</em>
-                                    </strong>. Char
-                                </h1>
-                                <p class="sec_7-readmore">Read More ...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="sec_7--item">
-                        <a href="#" class="sec_7--item_in w-inline-block">
-                            <img
-                                src="../assets/images/shanti-sparrow-website.jpeg"
-                                loading="lazy"
-                                alt
-                                class="sec_7--item-img"
-                            />
-                            <div class="sec_7--item_cont">
-                                <p class="sec_7--item_date">
-                                    <span class="author_box">By Ahmad Eyamin</span> • Nov 17 2020
-                                </p>
-                                <h1 class="sec_7-text">
-                                    <strong>
-                                        <em>Unicode</em>
-                                    </strong> character name,
-                                    <strong>
-                                        <em>Unicode</em>
-                                    </strong> 1.0 character name (deprecated)
-                                </h1>
-                                <p class="sec_7-readmore">Read More ...</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <HomeBlogPosts/>
 </template>
 
 <script>
 // @ is an alias to /src
 import SkillesIcons from '../components/SkillesIcons'
+import HomeBlogPosts from '../components/HomeBlogPosts'
 export default {
     name: "Home",
     components: {
-        SkillesIcons
+        SkillesIcons,
+        HomeBlogPosts,
     },
 };
 </script>
