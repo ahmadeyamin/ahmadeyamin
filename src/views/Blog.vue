@@ -29,29 +29,29 @@
                     <div class="b-sec-3_blogs">
                         <div class="sec-3_blog" v-for="(post,index) in posts" :key="index">
                             <div class="sec-3_blog--inner">
-                                <a href="#" class="blog_f_image w-inline-block">
+                                <router-link :to="{name:'SingleBlog',params: { slug: post.slug }}"  class="blog_f_image w-inline-block">
                                     <img
                                         :src="post.image"
                                         loading="lazy"
                                         alt
                                         class="blog_f_image_src"
                                     />
-                                </a>
+                                </router-link>
                                 <div class="blog_inf_sec">
                                     <p class="blog_cat_t">PHP</p>
                                     <p class="blog_p_date">{{new Date(Date(post.date.seconds)).toLocaleDateString()}}</p>
                                 </div>
-                                <a href="#" class="blog_title w-inline-block">
+                                <router-link :to="{name:'SingleBlog',params: { slug: post.slug }}"  class="blog_title w-inline-block">
                                     <h1
                                         class="blog_title_text"
                                     >{{post.title ?? 'N\\A'}}</h1>
-                                </a>
+                                </router-link>
                                 <div class="blog_text">
                                     <p class="blog_text_p">
                                         {{post.body.length > 240 ? post.body.substr(0,240)+'...' : post.body}}
                                     </p>
                                 </div>
-                                <a href="#" class="read_mored transition">Read Full Article</a>
+                                <router-link :to="{name:'SingleBlog',params: { slug: post.slug }}"  class="read_mored transition">Read Full Article</router-link>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ import db from '../firebase'
 export default {
     name: "Blog",
 
-        data() {
+    data() {
         return {
             posts:[],
             loading: true

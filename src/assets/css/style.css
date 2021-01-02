@@ -1704,3 +1704,6 @@ a {
 .slide-enter-from,.slide-leave-to{
     transform: translate(100%, 0px);
 }
+.text-center{
+    text-align: center;
+}

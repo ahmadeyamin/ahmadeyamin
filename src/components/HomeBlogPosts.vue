@@ -9,7 +9,7 @@
                 <div class="sec_7-box" v-if="!loading">
 
                     <div class="sec_7--item" v-for="(post,index) in posts" :key="index">
-                        <a href="#" class="sec_7--item_in w-inline-block">
+                        <router-link :to="{name:'SingleBlog',params: { slug: post.slug }}" class="sec_7--item_in w-inline-block">
                             <img
                                 :src="post.image"
                                 loading="lazy"
@@ -26,7 +26,7 @@
                                 <h1 class="sec_7-text">{{post.title}}</h1>
                                 <p class="sec_7-readmore">Read More ...</p>
                             </div>
-                        </a>
+                        </router-link>
                     </div>
                 </div>
                 <h2 v-else>
@@ -57,6 +57,7 @@ export default {
         db.collection('posts').limit(3).onSnapshot(snapshot=>{
             this.posts = []
             snapshot.forEach(data=>{
+                console.log(data.data());
                 this.posts.push(data.data())
             })
 

@@ -91,14 +91,23 @@ export default {
     },
 
     mounted() {
-        this.resizeNav();
-        this.toggleMenu();
+        
+        this.size.width = window.innerWidth;
+        this.initMenu();
+        
         window.addEventListener("resize", this.resizeNav);
     },
     methods: {
         toggleMenu: function() {
             if (this.size.width < 992) {
                 this.NavOpen = !this.NavOpen;
+            }else{
+                 this.NavOpen = false
+            }
+        },
+        initMenu: function() {
+            if (this.size.width > 992) {
+                 this.NavOpen = true
             }
         },
 
