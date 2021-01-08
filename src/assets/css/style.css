@@ -1021,6 +1021,10 @@ a {
   line-height: 1em;
   font-weight: 700;
 }
+.cont_submit[disabled]{
+    cursor: not-allowed;
+    background-color: #f77e8e;
+}
 
 .contact_right_p {
   display: -webkit-box;

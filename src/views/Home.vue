@@ -349,76 +349,12 @@
                                     <br />‍
                                 </h1>
                                 <div class="contact_form w-form">
-                                    <form
-                                        id="email-form"
-                                        name="email-form"
-                                        data-name="Email Form"
-                                        class="con_form_inner"
-                                    >
-                                        <div class="cont_name-sec">
-                                            <input
-                                                type="text"
-                                                class="contact_box_input transition w-input"
-                                                maxlength="256"
-                                                name="f-name"
-                                                data-name="f-name"
-                                                placeholder="First Name"
-                                                id="f-name"
-                                                required
-                                            />
-                                            <input
-                                                type="text"
-                                                class="contact_box_input transition l-name w-input"
-                                                maxlength="256"
-                                                name="L-Name"
-                                                data-name="L Name"
-                                                placeholder="Last Name"
-                                                id="L-Name"
-                                                required
-                                            />
-                                        </div>
-                                        <input
-                                            type="email"
-                                            class="contact_box_input transition w-input"
-                                            maxlength="256"
-                                            name="email"
-                                            data-name="email"
-                                            placeholder="Your Email"
-                                            id="email"
-                                            required
-                                        />
-                                        <input
-                                            type="text"
-                                            class="contact_box_input transition w-input"
-                                            maxlength="256"
-                                            name="subjet"
-                                            data-name="subjet"
-                                            placeholder="Subject"
-                                            id="subjet"
-                                            required
-                                        />
-                                        <select class="contact_box_input transition" style="padding:13px 7px;" placeholder="Select Project Range">
-                                            <option value="" selected >Select Project Range</option>
-                                            <option value="100-1000">100$ - 1000$</option>
-                                            <option value="1001-10000">1001$ - 10000$</option>
-                                            <option value="10001-100000">10001$ - 100000$</option>
-                                        </select>
-                                        <textarea
-                                            placeholder="Your Messages"
-                                            maxlength="5000"
-                                            id="msg"
-                                            name="msg"
-                                            required
-                                            data-name="msg"
-                                            class="contact_box_input transition w-input"
-                                        ></textarea>
-                                        <input
-                                            type="submit"
-                                            value="Submit"
-                                            data-wait="Please wait..."
-                                            class="cont_submit w-button"
-                                        />
-                                    </form>
+                                    
+
+                                    <ContactForm/>
+
+
+
                                     <div class="w-form-done">
                                         <div>Thank you! Your submission has been received!</div>
                                     </div>
@@ -490,11 +426,13 @@
 // @ is an alias to /src
 import SkillesIcons from '../components/SkillesIcons'
 import HomeBlogPosts from '../components/HomeBlogPosts'
+import ContactForm from '../components/Contact'
 export default {
     name: "Home",
     components: {
         SkillesIcons,
         HomeBlogPosts,
+        ContactForm
     },
 };
 </script>
