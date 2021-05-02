@@ -1,18 +1,14 @@
 <template>
     <div class="container">
-        <div>
-            <h2 class="title">Website under heavy development 😎</h2>
-        </div>
-        <br />
-        <div >
-            <nuxt-link class="subtitle" to="/about"> About </nuxt-link>
-        </div>
+        <h2 class="title">Dev: Ahmad Eyamin</h2>
+        <nuxt-link  class="subtitle" to="/"> Home </nuxt-link>
     </div>
 </template>
 
 <script>
 export default {};
 </script>
+
 
 <style>
 .container {
