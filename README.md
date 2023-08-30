@@ -1,10 +1,10 @@
 ### Hi there 👋, I'm Eyamin
-#### I'm full stack Web Developer
+#### I'm full-stack Web Developer
 
 
 I make things with coding, here I'm because I love open source and love git & GitHub. 
 
-I do web development for the last 3 years and working with some professional projects last 1.5 years. I did some cool projects for my clients like Brick-Field Management, Shop Management, NewsPaper with PHP, and Laravel.
+I have been doing web development for the last 5 years and working on some professional projects last 2.5 years. I did some cool projects for my clients like Brick-Field Management, Shop Management, NewsPaper with PHP, and Laravel.
 
 
 
@@ -43,7 +43,7 @@ Skills:
 
 </p>
 
-- 🔭 I’m currently working on Own Dream. 
+- 🔭 I’m currently working on my Own Dream. 
 - 🌱 I’m currently learning Flutter. 
 - 👯 I’m looking to collaborate on All open source. 
 - 🤔 I’m looking for help with You. 
