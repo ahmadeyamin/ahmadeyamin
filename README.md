@@ -4,7 +4,7 @@
 
 I make things with coding, here I'm because I love open source and love git & GitHub. 
 
-I have been doing web development for the last 5 years and working on some professional projects last 2.5 years. I did some cool projects for my clients like Brick-Field Management, Shop Management, NewsPaper with PHP, and Laravel.
+I have been doing web development for the last 6 years and working on some professional projects last 2.5 years. I did some cool projects for my clients like Brick-Field Management, Shop Management, NewsPaper with PHP, and Laravel.
 
 
 
